@@ -9,4 +9,6 @@ Latest iteration of this online tool I developed to compute the financial viabil
 * Earn-back time
 * Expected degeneration
 
-Production project, using Javascript and ChartJS. First project where I implemented object-oriented programming. 
+Production project, using Javascript and ChartJS. First project where I implemented object-oriented programming.
+
+Find the live version at https://balance.nl/sde-tool-balance/
