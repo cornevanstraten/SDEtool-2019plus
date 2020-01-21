@@ -1,0 +1,109 @@
+/*
+*  Cookie consent - Wordpress plugin
+*/
+
+.cl_cookie_notice_container{
+	position:fixed;
+	margin:0 auto;
+	max-width:475px;
+	top:auto;
+	bottom:30px;
+	left:auto;
+	right:30px;
+	display:none;
+	-webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.35);
+	border-radius:20px;
+}
+
+
+.cl_cookie_popup_header{
+	background-color:#108EC4; /* dynamisch */
+	padding:20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px
+}
+.cl_cookie_popup_header h2{
+	color:#fff; /* dynamisch */
+	line-height:1;
+	margin:0;
+	text-align:center;
+	font-weight:bold;
+  font-size:20px;
+}
+
+.cl_cookie_popup h2 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.cl_cookie_content{
+	background-color:#fff;
+	padding:20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+  font-size:15px;
+  line-height:2em;
+  margin-bottom:;
+}
+
+.cl_cookie_content p.cl_cookie_buttons{
+  padding-top:10px;
+}
+.cl_cookie_notice_container input.btn.accept{
+  font-weight:normal;
+  text-transform: none;
+  padding:13px 10px;
+  border-radius:3px;
+  border:0;
+  margin-bottom:0px;
+  margin-right:5px;
+  background-color:#2E990A; /* dynamisch maken */
+  color:#fff; /* dynamisch maken */
+  cursor:pointer;
+}
+
+.cl_cookie_content input{font-size:16px;}
+
+.cl_cookie_notice_container input.btn.reject{
+  background:none;
+  color:#4A4A4A;
+  text-transform: none;
+  font-style: italic;
+  padding:2px;
+  font-weight:lighter;
+  border:none;
+}
+
+.cl_cookie_notice_container input.btn.accept:hover{
+  background-color:#444; /* dynamisch */
+  color:#fff; /* dynamisch */
+}
+.cl_cookie_notice_container input.btn.reject:hover{
+  background:none;
+  color:#000;
+}
+
+
+
+@media (max-width: 767px), (max-device-width: 767px) and (orientation: portrait), (max-device-width: 499px) and (orientation: landscape){
+
+  .cl_cookie_notice_container {
+      margin: 0 auto;
+      max-width: 100%;
+      max-height:calc(100vh - 10vh - 10px);
+      border-radius:0;
+      bottom:0px;
+      left:auto;
+      right:0px;
+  }
+  .cl_cookie_popup_header{border-radius:0; padding:10px;}
+  .cl_cookie_popup_header h2{font-size:16px;}
+
+  .cl_cookie_content{border-radius:0; padding:10px 20px;}
+  .cl_cookie_content p{font-size:90%; margin-bottom:5px; text-align:center;}
+  .cl_cookie_notice_container input.btn.accept{margin-bottom:5px;}
+
+
+}
